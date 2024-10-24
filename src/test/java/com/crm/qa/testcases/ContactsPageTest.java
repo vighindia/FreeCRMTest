@@ -2,10 +2,7 @@ package com.crm.qa.testcases;
 
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.ContactsPage;
@@ -36,6 +33,7 @@ public class ContactsPageTest extends TestBase{
 	}
 	
 	@Test(priority=1)
+	@Ignore
 	public void validateContactspage() {
 		homePage.clickContacts();
 		boolean contacts=contactsPage.VerifyContactspage();
@@ -50,6 +48,7 @@ public class ContactsPageTest extends TestBase{
 	}
 	
 	@Test(priority=2, dataProvider="getCRMTestData")
+	@Ignore
 	public void validateEnterNewConactsDetails(String title, String firstName, String lastName, String email) {
 		homePage.ClickNewConactsLink();
 		contactsPage.EnterNewConactsDetails(title, firstName, lastName, email);

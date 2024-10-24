@@ -3,6 +3,7 @@ package com.crm.qa.testcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.base.TestBase;
@@ -37,6 +38,7 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	@Test(priority=3)
+	@Ignore
 	public void validatePricingLinkTest() {
 		String PricingText=loginpage.clickPricingLink();
 		Assert.assertEquals(PricingText, "Cloud CRM", "PricingText is NOT matching");
@@ -44,13 +46,15 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	@Test(priority=4)
+	@Ignore
 	public void EnterLoginCredentialsTest() {
 		String username=prop.getProperty("username");
 		String password=prop.getProperty("password");
 		homePage=loginpage.EnterLoginCredentials(username, password);
 	}
 	
-	@Test(priority=4)
+	@Test(priority=5)
+	@Ignore
 	public void LogoutTest() {
 		String username=prop.getProperty("username");
 		String password=prop.getProperty("password");

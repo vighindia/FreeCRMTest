@@ -9,49 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">629,098</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">14,210</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m0">LogoutTest</a></td><td rowspan="1">1729746169329</td><td rowspan="1">47896</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m1">validateContactspage</a></td><td rowspan="1">1729745622321</td><td rowspan="1">3259</td></tr><tr class="passedeven"><td><a href="#m2">validateEnterNewConactsDetails</a></td><td rowspan="3">1729745833129</td><td rowspan="3">53209</td></tr><tr class="passedeven"><td><a href="#m3">validateEnterNewConactsDetails</a></td></tr><tr class="passedeven"><td><a href="#m4">validateEnterNewConactsDetails</a></td></tr><tr class="passedodd"><td rowspan="5">com.crm.qa.testcases.HomePageTest</td><td><a href="#m5">validateHomePageTitle</a></td><td rowspan="1">1729745918934</td><td rowspan="1">38</td></tr><tr class="passedodd"><td><a href="#m6">validateclickContacts</a></td><td rowspan="1">1729745983578</td><td rowspan="1">3010</td></tr><tr class="passedodd"><td><a href="#m7">validateclickDeals</a></td><td rowspan="1">1729746017993</td><td rowspan="1">3334</td></tr><tr class="passedodd"><td><a href="#m8">validateclickTasks</a></td><td rowspan="1">1729746056923</td><td rowspan="1">2944</td></tr><tr class="passedodd"><td><a href="#m9">validateloggedinUserName</a></td><td rowspan="1">1729745951708</td><td rowspan="1">248</td></tr><tr class="passedeven"><td rowspan="4">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m10">EnterLoginCredentialsTest</a></td><td rowspan="1">1729746136608</td><td rowspan="1">16616</td></tr><tr class="passedeven"><td><a href="#m11">validateLoginPageTitletest</a></td><td rowspan="1">1729746076218</td><td rowspan="1">214</td></tr><tr class="passedeven"><td><a href="#m12">validatePricingLinkTest</a></td><td rowspan="1">1729746109235</td><td rowspan="1">10727</td></tr><tr class="passedeven"><td><a href="#m13">validatefreecrmLinkTest</a></td><td rowspan="1">1729746092882</td><td rowspan="1">426</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m0">validateLoginPageTitletest</a></td><td rowspan="1">1729776643249</td><td rowspan="1">220</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.crm.qa.testcases.LoginPageTest#LogoutTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;navbar-brand&apos;]&quot;}
-  (Session info: chrome=130.0.6723.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [44ea807d0a4a76e712fc1b50c415b8aa, findElement {value=//a[@class=&apos;navbar-brand&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: /var/folders/zr/n2hh0m317vj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57874}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57874/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 44ea807d0a4a76e712fc1b50c415b8aa
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.isDisplayed(Unknown Source)
-	at com.crm.qa.pages.LoginPage.validatefreecrmLink(LoginPage.java:51)
-	at com.crm.qa.testcases.LoginPageTest.LogoutTest(LoginPageTest.java:60)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.crm.qa.testcases.ContactsPageTest#validateContactspage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.crm.qa.testcases.ContactsPageTest#validateEnterNewConactsDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Dr.</td><td>Pratham Vighnesh</td><td>Prabhu</td><td>prathamvighnesh@gmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.crm.qa.testcases.ContactsPageTest#validateEnterNewConactsDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Mrs.</td><td>Deepa Vighnesh</td><td>Prabhu</td><td>deepavighnesh@gmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.crm.qa.testcases.ContactsPageTest#validateEnterNewConactsDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Mr.</td><td>Vighnesh</td><td>Prabhu</td><td>vighnesh2009@gmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.crm.qa.testcases.HomePageTest#validateHomePageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.crm.qa.testcases.HomePageTest#validateclickContacts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.crm.qa.testcases.HomePageTest#validateclickDeals</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.crm.qa.testcases.HomePageTest#validateclickTasks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.crm.qa.testcases.HomePageTest#validateloggedinUserName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.crm.qa.testcases.LoginPageTest#EnterLoginCredentialsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.crm.qa.testcases.LoginPageTest#validateLoginPageTitletest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">com.crm.qa.testcases.LoginPageTest#validatePricingLinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">com.crm.qa.testcases.LoginPageTest#validatefreecrmLinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">com.crm.qa.testcases.LoginPageTest#validateLoginPageTitletest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

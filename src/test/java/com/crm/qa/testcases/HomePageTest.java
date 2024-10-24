@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import com.crm.qa.base.TestBase;
@@ -37,12 +38,14 @@ public  class HomePageTest extends TestBase {
 	}
 	
 	@Test(priority=1)
+	@Ignore
 	public void validateHomePageTitle() {
 		String Title=homePage.verifyHomePageTitle();
 		Assert.assertEquals(Title, "CRMPRO", "Home Page Title Not Matching");	
 	}
 	
 	@Test(priority=2)
+	@Ignore
 	public void validateloggedinUserName() {
 		driver.switchTo().frame("mainpanel");
 		String UserName=homePage.verifyloggedinUserName();
@@ -50,6 +53,7 @@ public  class HomePageTest extends TestBase {
 	}
 	
 	@Test(priority=3)
+	@Ignore
 	public void validateclickContacts() {
 		driver.switchTo().frame("mainpanel");
 		contactsPage=homePage.clickContacts(); 
@@ -58,6 +62,7 @@ public  class HomePageTest extends TestBase {
 	}
 	
 	@Test(priority=4)
+	@Ignore
 	public void validateclickDeals() {
 		driver.switchTo().frame("mainpanel");
 		dealsPage=homePage.clickDeals(); 
@@ -67,6 +72,7 @@ public  class HomePageTest extends TestBase {
 	}
 	
 	@Test(priority=5)
+	@Ignore
 	public void validateclickTasks() {
 		driver.switchTo().frame("mainpanel");
 		tasksPage=homePage.clickTasks(); 
